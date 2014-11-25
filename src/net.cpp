@@ -1139,8 +1139,8 @@ void MapPort()
 // The first name is used as information source for addrman.
 // The second name should resolve to a list of seed addresses.
 static const char *strDNSSeed[][2] = {
-    {"104.131.14.177", "104.131.14.177"}, //Main Cleverhash Seed Node
-	{"192.241.232.114", "192.241.232.114"},
+    {"104.131.197.190", "104.131.197.190"}, //Main Cleverhash Seed Node
+	{"104.236.15.167", "104.236.15.167"},
 };
 
 void ThreadDNSAddressSeed(void* parg)
