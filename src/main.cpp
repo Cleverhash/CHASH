@@ -967,7 +967,7 @@ int64_t GetProofOfWorkReward(int64_t nFees)
     int64_t nSubsidy = 100 * COIN;
 	if(pindexBest->nHeight < 1)
     {
-        nSubsidy = 2000000 * COIN;
+        nSubsidy = 123995 * COIN;
     }
 		else if(pindexBest->nHeight < 500000)
     {
@@ -2485,9 +2485,9 @@ bool LoadBlockIndex(bool fAllowNew)
         if (!fAllowNew)
             return false;
 
-        const char* pszTimestamp = "Cleverhash";
+        const char* pszTimestamp = "CHASH";
         CTransaction txNew;
-        txNew.nTime = 1409692770;
+        txNew.nTime = 1416945073;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
         txNew.vin[0].scriptSig = CScript() << 0 << CBigNum(42) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
@@ -2497,9 +2497,9 @@ bool LoadBlockIndex(bool fAllowNew)
         block.hashPrevBlock = 0;
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 1;
-        block.nTime    = 1409692770;
+        block.nTime    = 1416945073;
         block.nBits    = bnProofOfWorkLimit.GetCompact();
-        block.nNonce   = 968887;
+        block.nNonce   = 256427;
 		if(fTestNet)
         {
             block.nNonce   = 0;
@@ -2526,7 +2526,7 @@ bool LoadBlockIndex(bool fAllowNew)
         printf("block.nNonce = %u \n", block.nNonce);
 
         //// debug print
-        assert(block.hashMerkleRoot == uint256("0xd36800c9e79e428fdc2b88b9d65bb2a72a3e3751545c49d7d4f434afb420dbc5"));
+        assert(block.hashMerkleRoot == uint256("0xfd585d3891970a11e78501264e099ae723b74970ad71e062cc7461cd1d103e54"));
         block.print();
         assert(block.GetHash() == (!fTestNet ? hashGenesisBlock : hashGenesisBlockTestNet));
         assert(block.CheckBlock());
