@@ -7,11 +7,11 @@ Algorithm: X13 POW/POS
 
 Ticker: CHASH
 
-Current Version "2.1.0.0"
+Current Version "3.0.0.0"
 
 Max Coins: 2,000,000 CHASH
 
-RPC Port: 28155
+RPC Port: 28194
 
 30 Blocks to mature
 
