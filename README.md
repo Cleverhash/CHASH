@@ -9,15 +9,15 @@ Ticker: CHASH
 
 Current Version "3.0.0.0"
 
-Max Coins: 2,000,000 CHASH
+Max Coins: 123,995 CHASH
 
-RPC Port: 28194
+RPC Port: 28195
 
 30 Blocks to mature
 
 Block Reward Schedule:
 
-Block 1 is 2,000,000  CHASH
+Block 1 is 123,995  CHASH
 
 Block 2-500,000 are 0 CHASH
 
